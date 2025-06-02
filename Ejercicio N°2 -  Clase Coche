@@ -1,0 +1,11 @@
+from datetime import date
+
+class Coche:
+    def __init__(self, marca, modelo, anio):
+        self.marca = marca
+        self.modelo = modelo
+        self.anio = anio
+
+    def obtener_anios_transcurridos(self):
+        anio_actual = date.today().year
+        return anio_actual - self.anio
