@@ -1,0 +1,10 @@
+class Banco:
+    def __init__(self, nombre, tasa_interes):
+        self.nombre = nombre
+        self.tasa_interes = tasa_interes
+
+    def calcular_interes(self, cantidad, anios):
+        return cantidad * (self.tasa_interes / 100) * anios
+
+    def tiempo_para_duplicar(self):
+        return 72 / self.tasa_interes
