@@ -1,0 +1,9 @@
+class Empleado:
+    def __init__(self, nombre, edad, salario, cargo):
+        self.nombre = nombre
+        self.edad = edad
+        self.salario = salario
+        self.cargo = cargo
+
+    def obtener_salario_anual(self):
+        return self.salario * 12
